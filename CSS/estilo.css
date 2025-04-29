@@ -47,6 +47,7 @@ aside{
 footer{
     background-color: rgb(33, 184, 33);
     padding: 50px;
+    width: 100%;
 }
 
 @media(min-width:700px) {
