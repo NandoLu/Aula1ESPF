@@ -1,0 +1,66 @@
+/* id - individual -> #
+class - coletivo -> . */
+
+*{  /* Seletor universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{ /* seletor */  
+    background-color: transparent;
+    background-color: rgb(146, 146, 146);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+#containerAside{
+    width: 100%;
+}
+
+#conteudo{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+#conteudo article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside{
+    background-color: aquamarine;
+    padding: 40px;
+}
+footer{
+    background-color: rgb(33, 184, 33);
+    padding: 50px;
+}
+
+@media(min-width:700px) {
+    #container{
+        flex-direction: column;
+    }
+    #containerAside{
+        display: flex;
+    }
+    #conteudo{
+        flex: 2;
+    }
+    aside{
+        flex: 1;
+    }
+    
+}
